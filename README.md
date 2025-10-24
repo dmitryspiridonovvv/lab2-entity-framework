@@ -1,5 +1,7 @@
 # Лабораторная работа №2: Использование Entity Framework и LINQ
 
+[![.NET Build](https://github.com/dmitryspiridonovvv/lab2-entity-framework/actions/workflows/dotnet.yml/badge.svg)](https://github.com/dmitryspiridonovvv/lab2-entity-framework/actions/workflows/dotnet.yml)
+
 ## Описание проекта
 Консольное приложение на .NET, демонстрирующее выполнение различных операций 
 с базой данных `RecordingStudioDB` с использованием Entity Framework Core и LINQ.
@@ -11,4 +13,4 @@
 ## Автор
 - ФИО: Спиридонов Д.А.
 - Группа: ИТИ-31
-[![.NET Build](https://github.com/dmitryspiridonovvv/lab2-entity-framework/actions/workflows/dotnet.yml/badge.svg)](https://github.com/dmitryspiridonovvv/lab2-entity-framework/actions/workflows/dotnet.yml)
+
