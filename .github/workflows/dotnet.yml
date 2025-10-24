@@ -1,0 +1,37 @@
+# Имя рабочего процесса
+name: .NET Build
+
+# Триггеры для запуска
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  build:
+    # Запускаем сборку на матрице из двух ОС
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    # Шаг 1: Клонирование репозитория
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Шаг 2: Настройка .NET SDK
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    # Шаг 3: Восстановление NuGet-пакетов
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # Шаг 4: Сборка проекта
+    - name: Build
+      run: dotnet build --no-restore
