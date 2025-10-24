@@ -11,3 +11,4 @@
 ## Автор
 - ФИО: Спиридонов Д.А.
 - Группа: ИТИ-31
+[![.NET Build](https://github.com/dmitryspiridonovvv/lab2-entity-framework/actions/workflows/dotnet.yml/badge.svg)](https://github.com/dmitryspiridonovvv/lab2-entity-framework/actions/workflows/dotnet.yml)
